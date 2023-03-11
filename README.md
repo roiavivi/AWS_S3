@@ -16,5 +16,28 @@ Using this repo you will be able to:
 - Change file's attributes
 - Copy objects between buckets
 
+
+
+How to Run the APP:
+
+1. To set these variables on Linux, OS X, or Unix, use export:
+    AWS_ACCESS_KEY_ID=your_access_key_id
+    AWS_SECRET_ACCESS_KEY=your_secret_access_key
+    AWS_DEFAULT_REGION=your_aws_default_region
+
+
+2. Build & Run the Docker:
+
+
+    docker build -t my_app .
+
+
+    docker run -it --rm \
+       -e AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID \
+       -e AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION \
+       -e AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
+       my_app
+
+
 See also
 * https://realpython.com/python-boto3-aws-s3/
