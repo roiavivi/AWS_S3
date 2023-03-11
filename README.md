@@ -21,6 +21,8 @@ Using this repo you will be able to:
 How to Run the APP:
 
 1. To set these variables on Linux, OS X, or Unix, use export:
+
+
     AWS_ACCESS_KEY_ID=your_access_key_id
     AWS_SECRET_ACCESS_KEY=your_secret_access_key
     AWS_DEFAULT_REGION=your_aws_default_region
